@@ -112587,7 +112587,7 @@ m=$.av
 l=(m==null?$.av=$.bx():m).bh("[DEFAULT]")
 A.b8(l,$.c5(),!0)
 m=A.c7(new A.bn(l))
-m=A.cd(m,m.gbr().ba("settings")).bM("wallet")
+m=A.cd(m,m.gbr().ba("admin")).bM("wallet")
 k=A.wg(A.C([o.a.w,o.d.a.a],t.K,t.X))
 k.toString
 s=6
