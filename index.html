@@ -43,7 +43,30 @@
  <!-- End of HubSpot Embed Code -->
 </head>
 <body>
+
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    function getCurrentPosition(successCallback, errorCallback) {
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          function(position) {
+            successCallback({
+              coords: {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                accuracy: position.coords.accuracy
+              }
+            });
+          },
+          function(error) {
+            errorCallback(error.message);
+          }
+        );
+      } else {
+        errorCallback("Geolocation is not supported by this browser.");
+      }
+    }
+  </script>
 
 </body>
 </html>
