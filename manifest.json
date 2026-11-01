@@ -1,6 +1,6 @@
 {
-    "name": "only_band_upgrade",
-    "short_name": "only_band_upgrade",
+    "name": "Novabands",
+    "short_name": "Novabands",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
